@@ -57,10 +57,11 @@ export default {
     };
   },
     created(){
-     
+      
+    this.getTodolist()
    },
   mounted() {
-    this.getTodolist()
+    
   },
   components:{
     EditTodoComponent,

@@ -89,10 +89,14 @@
             password: this.password
 
         }).then((res)=>{
+          
           localStorage.setItem('token',res.data.token)
+          axios.defaults.headers.common['Authorization'] = `Bearer ${localStorage.getItem("token")}` 
+          
+          this.$router.push({ path: '/home' })
         })
         
-        this.$router.push({ path: '/home' })
+       
       }
     }
 
