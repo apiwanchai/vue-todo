@@ -15,7 +15,7 @@
                             <v-col cols="12" sm="8">
                              
                             <v-text-field
-                              label="Email"
+                              label="Username"
                               v-model="username"
                               outlined
                               dense

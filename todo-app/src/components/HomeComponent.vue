@@ -2,7 +2,7 @@
   <div>
     <h1 class=" text-center mt-16">Todo</h1>
     <v-row class=" d-flex justify-center">
-<v-col cols="6" class="my-list">
+<v-col cols="6" class="v-list">
   
   <v-card v-for="data in dataList" :key="data._id" class="mt-5 "  >
     <v-card-title class="text-h5">
@@ -101,5 +101,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  
+    .v-list{
+  height:550px;
+  overflow-y:auto
+}
 </style>
